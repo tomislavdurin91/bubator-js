@@ -96,8 +96,8 @@ the `id` on the plugin wrapper in the DOM.
 ## Documentation
 
 The returned instance exposes the following methods:
-<style>td { min-width: 160px; }</style>
-| Name         | Params | Description |
+
+| Name         | Params&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 |--------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | scrollVthumb | dest \<`Number` \| `String`\><br>scrollBy \<`Boolean`\> | Scrolls content vertically.<br>If the *dest* param is of type `Number` then the method acts like `element.scrollTo()`.<br>If the *scrollBy* param is also set to `true` then the method acts like `element.scrollBy()`.<br>If the *dest* param is of type `String` then the method acts like `element.scrollIntoView()`.<br>In this case the *scrollBy* param does not have any effect. |
 | scrollHthumb | Same as above                                           | Same as above, but for horizontal scrollbar                                                                                                                                                                                                                                                                                                                                             |
