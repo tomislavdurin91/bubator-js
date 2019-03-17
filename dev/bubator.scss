@@ -1,0 +1,110 @@
+$thumbWidthHeight: 17px;
+
+.bubator-test {
+    position: fixed;
+    visibility: hidden;
+    width: 60px;
+    height: 60px;
+    overflow: scroll;
+}
+.bubator {
+    overflow: hidden;
+
+    .bubator-scrollview {
+        box-sizing: content-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin-right: -60px;
+        padding-right: 60px;
+        margin-bottom: -80px;
+        padding-bottom: 80px;
+    }
+    .bubator-content {
+        overflow-x: scroll;
+        margin-bottom: -80px;
+        padding-bottom: 80px;
+    }
+    .bubator-v-track,
+    .bubator-h-track {
+        display: block;
+    }
+}
+.bubator-scrollview {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &.v-track-active {
+        padding-right: 60px + $thumbWidthHeight;
+
+        & ~ .bubator-v-track {
+            transform: none;
+        }
+    }
+    &.h-track-active {
+        .bubator-content {
+            padding-bottom: 80px !important;
+        }
+        & ~ .bubator-h-track {
+            transform: none;
+        }
+    }
+    &.v-track-active.h-track-active {
+        & ~ .bubator-v-track {
+            bottom: $thumbWidthHeight;
+        }
+        & ~ .bubator-h-track {
+            right: $thumbWidthHeight;
+        }
+    }
+}
+.bubator-content {
+    -webkit-overflow-scrolling: touch;
+}
+.bubator-v-track,
+.bubator-h-track {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // background: #f4f4f4;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+.bubator-v-track {
+    top: 0;
+    width: $thumbWidthHeight;
+    transform: translateX($thumbWidthHeight);
+}
+.bubator-h-track {
+    left: 0;
+    height: $thumbWidthHeight;
+    transform: translateY($thumbWidthHeight);
+}
+.bubator-v-thumb,
+.bubator-h-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #babac0;
+    background-clip: content-box;
+    border: 5px solid transparent;
+    border-radius: 16px;
+    cursor: grab;
+
+    &:hover {
+        background-color: #a0a0a5;
+    }
+    &:active {
+        cursor: grabbing;
+    }
+}
+.bubator-v-thumb {
+    right: 0;
+    width: 100%;
+    transition: height 200ms ease, background-color 100ms ease;
+}
+.bubator-h-thumb {
+    bottom: 0;
+    height: 100%;
+    transition: width 200ms, background-color 100ms ease;
+}

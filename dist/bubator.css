@@ -1,0 +1,85 @@
+.bubator-test {
+  position: fixed;
+  visibility: hidden;
+  width: 60px;
+  height: 60px;
+  overflow: scroll; }
+
+.bubator {
+  overflow: hidden; }
+  .bubator .bubator-scrollview {
+    box-sizing: content-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-right: -60px;
+    padding-right: 60px;
+    margin-bottom: -80px;
+    padding-bottom: 80px; }
+  .bubator .bubator-content {
+    overflow-x: scroll;
+    margin-bottom: -80px;
+    padding-bottom: 80px; }
+  .bubator .bubator-v-track,
+  .bubator .bubator-h-track {
+    display: block; }
+
+.bubator-scrollview {
+  overflow: auto; }
+  .bubator-scrollview.v-track-active {
+    padding-right: 77px; }
+    .bubator-scrollview.v-track-active ~ .bubator-v-track {
+      transform: none; }
+  .bubator-scrollview.h-track-active .bubator-content {
+    padding-bottom: 80px !important; }
+  .bubator-scrollview.h-track-active ~ .bubator-h-track {
+    transform: none; }
+  .bubator-scrollview.v-track-active.h-track-active ~ .bubator-v-track {
+    bottom: 17px; }
+  .bubator-scrollview.v-track-active.h-track-active ~ .bubator-h-track {
+    right: 17px; }
+
+.bubator-v-track,
+.bubator-h-track {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: transform 200ms; }
+
+.bubator-v-track {
+  top: 0;
+  width: 17px;
+  transform: translateX(17px); }
+
+.bubator-h-track {
+  left: 0;
+  height: 17px;
+  transform: translateY(17px); }
+
+.bubator-v-thumb,
+.bubator-h-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #babac0;
+  background-clip: content-box;
+  border: 5px solid transparent;
+  border-radius: 16px;
+  cursor: grab; }
+  .bubator-v-thumb:hover,
+  .bubator-h-thumb:hover {
+    background-color: #a0a0a5; }
+  .bubator-v-thumb:active,
+  .bubator-h-thumb:active {
+    cursor: grabbing; }
+
+.bubator-v-thumb {
+  right: 0;
+  width: 100%;
+  transition: height 200ms ease, background-color 100ms ease; }
+
+.bubator-h-thumb {
+  bottom: 0;
+  height: 100%;
+  transition: width 200ms, background-color 100ms ease; }
