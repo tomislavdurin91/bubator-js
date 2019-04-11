@@ -41,7 +41,7 @@ window['BubatorJS'] = (function (window, document) {
             }
         }
     }
-    var easeInOutQuad =  function (t, b, c, d) {
+    var easeInOutQuad = function (t, b, c, d) {
         if ((t/=d/2) < 1) return c/2*t*t + b;
 		return -c/2 * ((--t)*(t-2) - 1) + b;
 	}
@@ -74,7 +74,7 @@ window['BubatorJS'] = (function (window, document) {
             subtree: true
         });
 
-        BubatorJS.cssThumbSize = size || 17;
+        BubatorJS.cssThumbSize = size || 8;
 
         this.overflowYOffset = 0;
         if (this.checkIfOverflowX()) {

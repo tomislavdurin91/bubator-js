@@ -1,4 +1,4 @@
-$thumbWidthHeight: 17px;
+$thumbWidthHeight: 8px;
 
 .bubator-test {
     position: fixed;
@@ -30,6 +30,7 @@ $thumbWidthHeight: 17px;
     }
 }
 .bubator-scrollview {
+    height: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 
@@ -58,6 +59,8 @@ $thumbWidthHeight: 17px;
     }
 }
 .bubator-content {
+    box-sizing: content-box;
+    min-height: 100%;
     -webkit-overflow-scrolling: touch;
 }
 .bubator-v-track,
@@ -66,7 +69,6 @@ $thumbWidthHeight: 17px;
     position: absolute;
     right: 0;
     bottom: 0;
-    // background: #f4f4f4;
     cursor: pointer;
     transition: transform 200ms;
 }
@@ -86,8 +88,6 @@ $thumbWidthHeight: 17px;
     top: 0;
     left: 0;
     background-color: #babac0;
-    background-clip: content-box;
-    border: 5px solid transparent;
     border-radius: 16px;
     cursor: grab;
 
@@ -95,6 +95,7 @@ $thumbWidthHeight: 17px;
         background-color: #a0a0a5;
     }
     &:active {
+        background-color: #86868c;
         cursor: grabbing;
     }
 }

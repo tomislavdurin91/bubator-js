@@ -97,9 +97,9 @@ the `id` on the plugin wrapper in the DOM.
 
 The returned instance exposes the following methods:
 
-| Name         | Params&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| Name         | Params&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 |--------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| scrollVthumb | dest \<`Number` \| `String`\><br>scrollBy \<`Boolean`\> | Scrolls content vertically.<br>If the *dest* param is of type `Number` then the method acts like `element.scrollTo()`.<br>If the *scrollBy* param is also set to `true` then the method acts like `element.scrollBy()`.<br>If the *dest* param is of type `String` then the method acts like `element.scrollIntoView()`.<br>In this case the *scrollBy* param does not have any effect. |
+| scrollVthumb | dest `<Number\|String>`<br>scrollBy `<Boolean>` | Scrolls content vertically.<br>If the *dest* param is of type `Number` then the method acts like `element.scrollTo()`.<br>If the *scrollBy* param is also set to `true` then the method acts like `element.scrollBy()`.<br>If the *dest* param is of type `String` then the method acts like `element.scrollIntoView()`.<br>In this case the *scrollBy* param does not have any effect. |
 | scrollHthumb | Same as above                                           | Same as above, but for horizontal scrollbar                                                                                                                                                                                                                                                                                                                                             |
 | destroy      | None                                                    | Destroys the instance which called it and removes all instance associated event listeners and styling.                                                                                                                                                                                                                                                                                                                                                                                        |
 
@@ -140,9 +140,9 @@ vertically at the same time
 left or right of the content can only be added by setting `padding-left` or
 `padding-right` on the `bubator-content` class
 * Due to tricky markup required for supporting all browsers, spacing on the
-bottom of the content can only be added by setting a `border-bottom` on the
-`bubator-content` class (or by normally setting a `margin\padding` on the
-last element of your content as usual)
+bottom of the content can only be added by setting a
+`margin-bottom\padding-bottom` on the last element of your content or by using
+a spacer element
 
 ## License
 
