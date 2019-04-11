@@ -24,9 +24,11 @@
     display: block; }
 
 .bubator-scrollview {
-  overflow: auto; }
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
   .bubator-scrollview.v-track-active {
-    padding-right: 77px; }
+    padding-right: 68px; }
     .bubator-scrollview.v-track-active ~ .bubator-v-track {
       transform: none; }
   .bubator-scrollview.h-track-active .bubator-content {
@@ -34,9 +36,14 @@
   .bubator-scrollview.h-track-active ~ .bubator-h-track {
     transform: none; }
   .bubator-scrollview.v-track-active.h-track-active ~ .bubator-v-track {
-    bottom: 17px; }
+    bottom: 8px; }
   .bubator-scrollview.v-track-active.h-track-active ~ .bubator-h-track {
-    right: 17px; }
+    right: 8px; }
+
+.bubator-content {
+  box-sizing: content-box;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch; }
 
 .bubator-v-track,
 .bubator-h-track {
@@ -49,13 +56,13 @@
 
 .bubator-v-track {
   top: 0;
-  width: 17px;
-  transform: translateX(17px); }
+  width: 8px;
+  transform: translateX(8px); }
 
 .bubator-h-track {
   left: 0;
-  height: 17px;
-  transform: translateY(17px); }
+  height: 8px;
+  transform: translateY(8px); }
 
 .bubator-v-thumb,
 .bubator-h-thumb {
@@ -63,8 +70,6 @@
   top: 0;
   left: 0;
   background-color: #babac0;
-  background-clip: content-box;
-  border: 5px solid transparent;
   border-radius: 16px;
   cursor: grab; }
   .bubator-v-thumb:hover,
@@ -72,6 +77,7 @@
     background-color: #a0a0a5; }
   .bubator-v-thumb:active,
   .bubator-h-thumb:active {
+    background-color: #86868c;
     cursor: grabbing; }
 
 .bubator-v-thumb {

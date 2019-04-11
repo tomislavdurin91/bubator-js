@@ -40,7 +40,7 @@ var debounce = function (func, wait, immediate) {
         }
     }
 }
-var easeInOutQuad =  function (t, b, c, d) {
+var easeInOutQuad = function (t, b, c, d) {
     if ((t/=d/2) < 1) return c/2*t*t + b;
     return -c/2 * ((--t)*(t-2) - 1) + b;
 }
@@ -75,7 +75,7 @@ export default function BubatorJS (selector, size) {
         subtree: true
     });
 
-    BubatorJS.cssThumbSize = size || 17;
+    BubatorJS.cssThumbSize = size || 8;
 
     this.overflowYOffset = 0;
     if (this.checkIfOverflowX()) {
@@ -429,3 +429,11 @@ BubatorJS['destroyAll'] = function () {
     window.removeEventListener('resize', BubatorJS.onResize);
     BubatorJS.inited = false;
 }
+
+/**
+ * Required only for tricking / manipulating Google Closure Compiler.
+ * Remember to add 'export default' into bubator-es6.min.js
+ * and remove 'new h("dummy1",1);new h("dummy2",2);' afterwards.
+ */
+new BubatorJS('dummy1', 1)
+new BubatorJS('dummy2', 2)
