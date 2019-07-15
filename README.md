@@ -8,11 +8,10 @@ doesn't require absolute or fixed positioning on it's wrappers.
 * Lightweight (~6 kB minified, probably even less gzipped)
 * Written in plain JS with no additional dependencies
 * Efficient (uses rAF, mutationObserver and debouncing under the hood)
-* Doesn't require absolute or fixed positioning on its parent wrappers unlike
-other scrollbar solutions
+* Doesn't require absolute or fixed positioning on its parent wrappers
 * Automatically recalculates itself on resize and on content change
-* Supports scroll to, scroll by and scroll to element
-* Doesn't get called when on a mobile device in order to save resources
+* Supports 'scroll to', 'scroll by' and 'scroll to element'
+* Doesn't get called on a mobile device in order to save resources
 
 ## Getting Started
 
@@ -80,8 +79,8 @@ The following minimal markup is required for the plugin to work properly:
 IMPORTANT - In the example above:<br>
 
 * `id` must be unique
-* `your-custom-class` has to have a position other than `position:static`
-* `bubator-scrollview` has to have a height other than `height:auto` or has
+* `your-custom-class` has to have a position other than `position: static;`
+* `bubator-scrollview` has to have a height other than `height: auto;` or has
 to have a `max-height`
 
 After that you can instantiate the plugin by calling:
