@@ -127,7 +127,7 @@ BubatorJS.destroyAll();
 
 ## Examples
 
-TODO
+https://tomislav-durin.from.hr/bubator-js/index
 
 ## Caveats
 
