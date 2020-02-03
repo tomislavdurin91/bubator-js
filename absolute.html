@@ -4,61 +4,80 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <title>BubatorJS</title>
+    <title>Examples with absolutely positioned parent wrappers | BubatorJS</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
     <style>
-        html {
-            line-height: 1;
-            box-sizing: border-box;
-        }
-        * {
-            box-sizing: border-box;
-        }
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333333;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.5;
+            font-size: 18px;
+            font-family: -apple-system,BlinkMacSystemFont,"avenir next",avenir,"Segoe UI","lucida grande","helvetica neue",helvetica,"Fira Sans",roboto,noto,"Droid Sans",cantarell,oxygen,ubuntu,"franklin gothic medium","century gothic","Liberation Sans",sans-serif;
+            color: #444;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            line-height: 1.2;
+        }
+        a {
+            display: inline-block;
+        }
+
+        .demo-1 {
+            position: absolute;
+            top: 240px;
+            left: 20px;
+            right: 20px;
+            max-width: 700px;
+            margin: auto;
+            background-color: white;
+        }
+        .demo-1 .bubator-scrollview {
+            max-height: 300px;
+        }
+
+        .demo-2-title {
+            position: absolute;
+            top: 560px;
+            left: 0;
+            right: 0;
         }
         .demo-2 {
             position: absolute;
-            top: 80px;
+            top: 670px;
             left: 0;
             right: 0;
-            bottom: 0;
+            /* bottom: 0; */
             background-color: rgb(238, 238, 238);
         }
         .demo-2 .bubator-scrollview {
-            max-height: 100%;
+            max-height: 300px;
+        }
+
+        .back-to {
+            position: absolute;
+            top: 1000px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin-bottom: 40px;
         }
     </style>
     <link rel="stylesheet" href="bubator.min.css">
 </head>
 <body>
-    <h1>Both scrollbars w/large overflow</h1>
-    <div id="jsBubator6" class="demo-2">
+    <h1>Examples with absolutely positioned parent wrappers</h1>
+    <br/>
+    <h2>Vertical scrollbar w/small overflow</h2>
+    <div id="jsBubator1" class="demo-1">
         <div class="bubator-scrollview">
             <div class="bubator-content">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1 style="min-width: 9999px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
             </div>
         </div>
         <div class="bubator-h-track">
@@ -68,10 +87,42 @@
             <div class="bubator-v-thumb"></div>
         </div>
     </div>
-
+    <h2 class="demo-2-title">Vertical scrollbar w/large overflow</h2>
+    <div id="jsBubator2" class="demo-2">
+        <div class="bubator-scrollview">
+            <div class="bubator-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ex, repellat expedita cumque libero voluptate similique! Earum sed, excepturi ducimus placeat quod iure eum, maxime in blanditiis enim adipisci non?</p>
+            </div>
+        </div>
+        <div class="bubator-h-track">
+            <div class="bubator-h-thumb"></div>
+        </div>
+        <div class="bubator-v-track">
+            <div class="bubator-v-thumb"></div>
+        </div>
+    </div>
+    <p class="back-to">
+        <a href="index.html">Back to index page</a>
+    </p>
     <script src="bubator.min.js"></script>
     <script>
-        var bubator6 = new BubatorJS('jsBubator6');
+        var bubator1 = new BubatorJS("jsBubator1");
+        var bubator2 = new BubatorJS("jsBubator2");
     </script>
 </body>
 </html>

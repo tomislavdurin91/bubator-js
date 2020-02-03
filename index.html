@@ -8,174 +8,54 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
     <style>
-        html {
-            line-height: 1;
-            box-sizing: border-box;
-        }
-        * {
-            box-sizing: border-box;
-        }
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333333;
-        }
-        .demo-1 {
-            width: 600px;
-            max-width: 100%;
+            max-width: 700px;
             margin: 40px auto;
-            background-color: rgb(238, 238, 238);
-            position: relative;
+            padding: 0 20px;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 18px;
+            font-family: -apple-system,BlinkMacSystemFont,"avenir next",avenir,"Segoe UI","lucida grande","helvetica neue",helvetica,"Fira Sans",roboto,noto,"Droid Sans",cantarell,oxygen,ubuntu,"franklin gothic medium","century gothic","Liberation Sans",sans-serif;
+            color: #444;
         }
-        .demo-1 .bubator-scrollview {
-            max-height: 400px;
+        h1, h2, h3 {
+            line-height: 1.2;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        a {
+            display: inline-block;
         }
     </style>
     <link rel="stylesheet" href="bubator.min.css">
 </head>
 <body>
-    <h1>Vertical scrollbar w/small overflow</h1>
-    <div id="jsBubator1" class="demo-1">
-        <div class="bubator-scrollview">
-            <div class="bubator-content">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-            </div>
-        </div>
-        <div class="bubator-h-track">
-            <div class="bubator-h-thumb"></div>
-        </div>
-        <div class="bubator-v-track">
-            <div class="bubator-v-thumb"></div>
-        </div>
-    </div>
-
-    <h1>Vertical scrollbar w/large overflow</h1>
-    <div id="jsBubator2" class="demo-1">
-        <div class="bubator-scrollview">
-            <div class="bubator-content">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-            </div>
-        </div>
-        <div class="bubator-h-track">
-            <div class="bubator-h-thumb"></div>
-        </div>
-        <div class="bubator-v-track">
-            <div class="bubator-v-thumb"></div>
-        </div>
-    </div>
-
-    <h1>Horizontal scrollbar w/small overflow</h1>
-    <div id="jsBubator3" class="demo-1">
-        <div class="bubator-scrollview">
-            <div class="bubator-content">
-                <h1 style="min-width: 1000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-            </div>
-        </div>
-        <div class="bubator-h-track">
-            <div class="bubator-h-thumb"></div>
-        </div>
-        <div class="bubator-v-track">
-            <div class="bubator-v-thumb"></div>
-        </div>
-    </div>
-
-    <h1>Horizontal scrollbar w/large overflow</h1>
-    <div id="jsBubator4" class="demo-1">
-        <div class="bubator-scrollview">
-            <div class="bubator-content">
-                <h1 style="min-width: 9999px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-            </div>
-        </div>
-        <div class="bubator-h-track">
-            <div class="bubator-h-thumb"></div>
-        </div>
-        <div class="bubator-v-track">
-            <div class="bubator-v-thumb"></div>
-        </div>
-    </div>
-
-    <h1>Both scrollbars w/small overflow</h1>
-    <div id="jsBubator5" class="demo-1">
-        <div class="bubator-scrollview">
-            <div class="bubator-content">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1 style="min-width: 1000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-            </div>
-        </div>
-        <div class="bubator-h-track">
-            <div class="bubator-h-thumb"></div>
-        </div>
-        <div class="bubator-v-track">
-            <div class="bubator-v-thumb"></div>
-        </div>
-    </div>
-
-    <h1>Both scrollbars w/large overflow</h1>
-    <div id="jsBubator6" class="demo-1">
-        <div class="bubator-scrollview">
-            <div class="bubator-content">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1 class="testis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-                <h1 style="min-width: 9999px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni possimus nemo recusandae minima quis voluptatem deserunt veniam aperiam saepe asperiores ipsa vero beatae velit, reprehenderit molestias nulla fugiat aliquam itaque?</h1>
-            </div>
-        </div>
-        <div class="bubator-h-track">
-            <div class="bubator-h-thumb"></div>
-        </div>
-        <div class="bubator-v-track">
-            <div class="bubator-v-thumb"></div>
-        </div>
-    </div>
-
-    <script src="bubator.min.js"></script>
-    <script>
-        var bubator1 = new BubatorJS('jsBubator1');
-        var bubator2 = new BubatorJS('jsBubator2');
-        var bubator3 = new BubatorJS('jsBubator3');
-        var bubator4 = new BubatorJS('jsBubator4');
-        var bubator5 = new BubatorJS('jsBubator5');
-        var bubator6 = new BubatorJS('jsBubator6');
-    </script>
+    <h1>An index page for BubatorJS examples</h1>
+    <p>For more information on BubatorJS please visit
+        <a href="https://github.com/tomislavdurin91/bubator-js" target="_blank">
+            the project page on Github
+        </a>
+    </p>
+    <br>
+    <h2>Examples</h2>
+    <ul>
+        <li>
+            <a href="relative.html">
+                Examples with relatively positioned parent wrappers
+            </a>
+        </li>
+        <li>
+            <a href="absolute.html">
+                Examples with absolutely positioned parent wrappers
+            </a>
+        </li>
+        <li>
+            <a href="programmatic.html">
+                Examples with programmatic scrolling
+            </a>
+        </li>
+    </ul>
 </body>
 </html>
